@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- (Part 2: CSS, Question 0) Font import here. If you don't know what this is yet, don't worry, we cover this in the Part 2 of the homework.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Nicole Martinez</title>
+</head>
+<body>
+    <div id=container>
+        <!-- Question 0. Add an image here (a picture of you!) Make sure it's a square. -->
+        <div id="profile-pic">
+            <img src="assets/NM-ProfilePic-Cubstart.jpeg" alt="Picture of me :)">
+        </div>
+        
+        <h1>Nicole Martinez</h1>
+        <!-- Question 1. Add headings to each of these sections! Make this heading smaller than your name.-->
+        <section id="education">
+            <h2>Education</h2>
+            <!-- Question 2. Fill this in with details about your degree, major(s), and coursework. Use at least 1 header tag (h3, b, or em). -->
+            <b>Freshman | Computer Science + Molecular & Cell Biology | UC Berkeley</b>
+            <div id="coursework-list">
+                <p><u>Coursework</u>: 
+                    <ul>
+                        <li>COMPSCI 10: The Beauty and Joy of Computing</li>
+                        <li>COMPSCI 61A: The Structure and Interpretation of Computer Programs</li>
+                        <li>ENGIN 183A: A. Richard Newton Lecture Series</li>
+                        <li>CHEM 1A: General Chemistry</li>
+                        <li>CHEM 1AL: General Chemistry Laboratory</li>
+                        <li>INTEGBI 77A: Integrative Human Biology</li>
+                        <li>MATH 1A: Calculus I</li>
+                        <li>MATH 1B: Calculus II</li>
+                        <li>FILM R1A: Racial Histories of Surveillance Technologies</li>
+                    </ul>
+                </p>
+            </div>
+    
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <!-- Question 3a. Create 2 to 3 divs with the same class (experience-list-item), and fill them in with your work experiences. -->
+            <div class="experience-wrapper">
+                <div class="experience-list-item">
+                    <h3>Next Gen Consulting, UC Berkeley</h3>
+                    <p id="experience-item-role">Strategy Analyst</p>
+                    <ul>
+                        <li>Student-run consulting club working with various types of companies, start-ups, and nonprofits</li><!-- Question 3b. Fill this in with some bulletpoints on things you did. -->
+                    </ul>
+                </div>
+                <div class="experience-list-item">
+                    <h3>Dev Mission</h3>
+                    <p id="experience-item-role">Pre-Apprenticeship Trainee</p>
+                    <ul>
+                        <!-- Question 3b. Fill this in with some bulletpoints on things you did. -->
+                        <li>Acquired introductory/foundational knowledge of IT Fundamentals (Hardware, Software, OS); Intro to Programming (HTML, CSS, JavaScript, jQuery, Bootstrap, AirTable); IoT - Internet of Things (TinkerCad, Arduino)</li>
+                        <li>Collaborated on a Business Communication Project, focused on Cybersecurity and the dangers faced by consumers</li>
+                        <li>Contributed to the planning and execution of STEAM Day at a local elementary school; led hands-on activities
+                            teaching children about various science activities</li>
+                    </ul>
+                </div>
+                <div class="experience-list-item">
+                    <h3>Opportunities For All: CSI Tech - Google Cohort</h3>
+                    <p id="experience-item-role">Intern</p>
+                    <ul>
+                        <!-- Question 3b. Fill this in with some bulletpoints on things you did. -->
+                        <li>Strengthened collaboration and team-building skills through active participation in group activities</li>
+                        <li>Enhanced professional development through weekly workshops hosted by industry experts</li>                       
+                        <li>Demonstrated website development skills by presenting a project on current public transportation issues in San
+                            Francisco to an audience of over 100 guests</li>
+                    </ul>
+                </div>
+                <div class="experience-list-item">
+                    <h3>UCSF: MISCI (Multimodal Intergenerational Social Contact Intervention)</h3>
+                    <p id="experience-item-role">Volunteer</p>
+                    <ul>
+                        <!-- Question 3b. Fill this in with some bulletpoints on things you did. -->
+                        <li>Assisted in research at the Global Brain Health Institute (GBHI) at UCSF, exploring the use of arts-based
+                            interventions to address loneliness and social isolation, as well as the role of intergenerational interactions in
+                            reducing ageism bias through research and study</li>
+                        <li>Jointly executed a creative project with partners of different ages through a weekly meeting schedule, where we
+                            shared personal stories and developed a one-page cookbook featuring family recipes</li>  
+                    </ul>
+                </div>
+            </div>
+            <!-- Question 3c. Create a div that contains all the experience-list-item divs named "experience-wrapper"! You'll need this later. -->
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <!-- Question 4a. Create a few project-list-items divs. Fill these in with your favorite projects! -->
+            <div class="project-wrapper">
+                <div class="project-list-item">
+                    <h3>The Game of Hog</h3>
+                    <p class="project-description">An interactive game of Hog, created using Python.</p>
+                </div>
+                <div class="project-list-item">
+                    <h3 id="project-name" data-replace="get a link"><span>CS 61A Autocorrected Typing Software</span></h3>
+                    <p class="project-description">Interactive game created using Python. In this project, I wrote a program that measures typing speed, implements typing autocorrect (which is a feature that attempts to correct the spelling of a word after a user types it), and includes multiplayer functionality. This project is inspired by typeracer.
+                    </p>
+                </div>
+            <!-- Question 4b. Create a div that contains all the projects-list-item divs named "project-wrapper". You'll need this later! -->
+            </div>
+        </section>
+        <section id="contact">
+            <h3>Contact</h3>
+            <!-- Question 5. Add a link to your favorite social media account to the text "here". -->
+            <p>You can contact me <a href="www.linkedin.com/in/nicole-martinez-52n4">&nbsp;here&nbsp;</a>!</p>
+        </section>
+    </div>
+</body>
+</html>
